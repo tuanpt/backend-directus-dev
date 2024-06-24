@@ -39,7 +39,7 @@ const value = computed({
 });
 
 const query = ref<RelationQuerySingle>({
-	fields: ['id', 'title', 'type', 'filename_download'],
+	fields: ['id', 'title', 'type', 'filename_download', 'filename_upload'],
 });
 
 const { collection, field } = toRefs(props);

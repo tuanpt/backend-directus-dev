@@ -296,6 +296,17 @@ function useMovetoFolder() {
 			>
 				<v-icon name="download" />
 			</v-button>
+            
+            <v-button
+				v-tooltip.bottom="t('stt')"
+				secondary
+				icon
+				rounded
+				:stt="item?.filename_stt"
+				:href="getAssetUrl(props.primaryKey, true)"
+			>
+				<v-icon name="stt" />
+			</v-button>
 
 			<v-button
 				v-if="item?.type?.includes('image')"
